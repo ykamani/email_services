@@ -6,14 +6,14 @@
 		<h1 style="text-align:center"> Reset Password </h1>
 		<br>
 		<br>
-		<form method="post" action="home.html" >
+		<form method="get" action="home.html" >
         <table align="center" >
             <tr>
-                <td>Enter New Password  :</td><td><input type="password" name="password" value=""  />
+                <td>Enter New Password  :</td><td><input type="password" name="password" value=""  required/>
                 </td>
             </tr>
 			<tr>
-                <td>Re-enter New Password  :</td><td><input type="password" name="password" value=""  />
+                <td>Re-enter New Password  :</td><td><input type="password" name="password" value=""  required/>
                 </td>
             </tr>
             <tr>
@@ -22,6 +22,11 @@
                     <input type="submit" name="submit" value="Reset" style="font-size:14px; " />
                 </td>
             </tr>
+		<tr>
+				<td>
+					<a href="index.html">Back</a>
+				</td>
+			</tr>
         </table>
     </form> 
 	</body>
