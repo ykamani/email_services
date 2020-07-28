@@ -6,10 +6,10 @@
 		<h1 style="text-align:center"> OTP Verification </h1>
 		<br>
 		<br>
-		<form method="post" action="OTP.html" >
+		<form method="get" action="OTP.html" >
         <table align="center" >
             <tr>
-                <td>Email :</td><td><input type="text" name="username" value="" />
+                <td>Email :</td><td><input type="email" name="username" value="" required/>
                 </td>
             </tr>
             <tr>
@@ -24,10 +24,10 @@
         </table>
     </form> 
 	
-	<form method="post" action="reset.html"  >
+	<form method="get" action="reset.html"  >
         <table align="center" >
             <tr>
-                <td>Enter OTP :</td><td><input type="number" name="otp" value="" />
+                <td>Enter OTP :</td><td><input type="number" name="otp" value="" required/>
                 </td>
             </tr>
 			<tr>
@@ -35,6 +35,11 @@
                     <input type="submit" name="submit" value="Verify" style="font-size:14px; " />
                 </td>
             </tr>
+		<tr>
+				<td>
+					<a href="index.html">Back</a>
+				</td>
+			</tr>
         </table>
     </form> 
 	</body>
