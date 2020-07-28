@@ -6,18 +6,28 @@
 		<h1 style="text-align:center"> Schedule Email </h1>
 		<br>
 		<br>
-		<form method="post" action="home.html" >
+		<form method="get" action="home.html" >
         <table align="center" >
+		<tr>
+				<td>
+					<a href="index.html">Log out</a>
+				</td>
+			</tr>
             <tr>
-                <td>Pick Time :</td><td colspan="2"><input type="time" name="time"/>
+		    <tr>
+				<td>
+					<a href="home.html">Home</a>
+				</td>
+			</tr>
+                <td>Pick Time :</td><td colspan="2"><input type="time" name="time" required/>
                 </td>
             </tr>
 			<tr>
-                <td>From :</td><td colspan="2"><input type="text" name="from" value="" />
+                <td>From :</td><td colspan="2"><input type="text" name="from" value="" required/>
                 </td>
             </tr>
 			<tr>
-                <td>To :</td><td colspan="2"><input type="text" name="username" value="" />
+                <td>To :</td><td colspan="2"><input type="text" name="username" value="" required/>
                 </td>
             </tr>
 			<tr>
@@ -25,12 +35,12 @@
                 </td>
             </tr>
 			<tr>
-                <td>Compose text :</td><td colspan="2"><input type="text" name="username" value="" />
+                <td>Compose text :</td><td colspan="2"><input type="text" name="username" value="" required/>
                 </td>
             </tr>
             <tr>
                 <td>
-					<button onclick="window.location.href='document.html'">Attach Document</button>
+					<button onclick="window.location.href='document.html'"><b>Attach Document<b></button>
                 </td>
             </tr>
 			<tr>
