@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 	<body>
-		<h1 style="text-align:center"> Member Login </h1>
+		<div class="header" style="text-align: center;"><b> Member Login </b></div>
 		<br>
 		<br>
 		<form method="get" action="./home.html" >
         <table align="center" >
             <tr>
-                <td>Email :</td><td><input type="email" name="email" value="" required/>
+                <td><div class="txt">Email :</div></td><td><input type="email" name="email" value="" required/>
                 </td>
             </tr>
             <tr>
-                <td>Password  :</td><td><input type="password" name="password" value="" required />
+                <td><div class="txt">Password  :</div></td><td><input type="password" name="password" value="" required />
                 </td>
             </tr>
 			<tr></tr>
@@ -22,7 +23,7 @@
             <tr>
 				<td></td>
                 <td>
-                    <input type="submit" name="login" value="Log In" style="font-size:14px; " />
+                    <input class="button" type="submit" name="login" value="Log In" style="font-size:14px; " />
                 </td>
             </tr>
 			<tr>
