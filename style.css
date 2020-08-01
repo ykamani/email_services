@@ -23,6 +23,12 @@ body
 		a:active {
   		color: blue;
 		}
+.t{
+	color:aliceblue;
+}
+.t:hover{
+	color:black;
+}
 
 		.header , .button {
 			text-decoration-style: solid;
