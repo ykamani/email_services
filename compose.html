@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 	<body>
-		<h1 style="text-align:center"> Compose Email </h1>
+		<div class="header" style="text-align: center;"><b> Compose Email </b></div>
 		<br>
 		<br>
 		<br>
@@ -16,33 +17,33 @@
 			</tr>
 			<tr>
                 <td>
-					<button onclick="window.location.href='schedule.html'"><b>Schedule Email<b></button>
+					<button class="header" onclick="window.location.href='schedule.html'"><b>Schedule Email<b></button>
                 </td>
             </tr>
             <tr>
-                <td>From :</td><td colspan="2"><input type="email" name="from" value="" required />
+		    <td><div class="txt">From :</div></td><td colspan="2"><input type="email" name="from" placeholder="username@email.com" value="" required />
                 </td>
             </tr>
 			<tr>
-                <td>To :</td><td colspan="2"><input type="email" name="username" value="" required />
+                <td><div class="txt">To :</div></td><td colspan="2"><input type="email" name="username" placeholder="username@email.com" value="" required />
                 </td>
             </tr>
 			<tr>
-                <td>Subject :</td><td colspan="2"><input type="text" name="username" value="" />
+                <td><div class="txt">Subject :</div></td><td colspan="2"><input type="text" name="username" placeholder="enter subject here" value="" />
                 </td>
             </tr>
 			<tr>
-                <td>Compose text :</td><td colspan="2"><input type="text" name="username" value="" required />
+                <td><div class="txt">Compose text :</div></td><td colspan="2"><input type="text" name="username" placeholder="compose email here" value="" required />
                 </td>
             </tr>
             <tr>
                 <td>
-					<button onclick="window.location.href='document.html'"><b>Attach Document<b></button>
+					<button class="header" onclick="window.location.href='document.html'"><b>Attach Document<b></button>
                 </td>
             </tr>
 			<tr>
 				<td colspan="2"></td>
-				<td><input type="submit" name="submit" value="Send" style="font-size:14px; " /></td>
+				<td><input class="button" type="submit" name="submit" value="Send" style="font-size:14px; " /></td>
 			</tr>
 			<tr>
 				<td>
