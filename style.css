@@ -1,0 +1,48 @@
+body 
+			{
+			background-image: url("bg2.jpg");
+			background-color:rgba(0, 0, 0, 0.1)
+			 background-repeat: no-repeat, repeat;
+			background-size: cover;
+			background-blend-mode:luminosity;
+			background: transparent\9;
+			}
+			a:link {
+ 			 color:whitesmoke;
+			}
+
+
+			a:visited {
+  			color:aliceblue;
+			}
+
+			a:hover {
+  			color:black;
+			}
+
+		a:active {
+  		color: blue;
+		}
+
+		.header , .button {
+			text-decoration-style: solid;
+			text-size-adjust:initial;
+			text-decoration-color: azure;
+			border-style: solid;
+			border-radius: 11px;
+			background-color: azure;
+			color:black;
+			
+		}
+		.header:hover {
+			background-color:white;
+			color:slateblue;
+		}
+		.button : hover {
+			background-color:black;
+			color:white;
+			border-radius: 7px;
+		}
+		div.txt {
+			color:aliceblue
+		}
