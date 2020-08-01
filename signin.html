@@ -1,27 +1,28 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 	<body>
-		<h1 style="text-align:center"> Member Sign-in </h1>
+		<div class="header" style="text-align: center;"><b>  Member Sign-in </b></div>
 		<br>
 		<br>
 		<form method="get" action="home.html" >
         <table align="center" >
             <tr>
-                <td>Email :</td><td><input type="email" name="username" value="" required/>
+		    <td><div class="txt">Email :</div></td><td><input type="email" name="username" placeholder="username@email.com" value="" required/>
                 </td>
             </tr>
             <tr>
-                <td>Password  :</td><td><input type="password" name="password" value=""  required/>
+                <td><div class="txt">Password  :</div></td><td><input type="password" name="password" placeholder="set password here" value=""  required/>
                 </td>
             </tr>
 			<tr>
-                <td>Re-enter Password  :</td><td><input type="password" name="password" value=""  required/>
+                <td><div class="txt">Re-enter Password  :</div></td><td><input type="password" name="password" placeholder="re-enter password here" value=""  required/>
                 </td>
             </tr>
 			<tr>
-                <td>Mobile Number :</td><td><input type="number" name="mobile_no" value="" required/>
+                <td><div class="txt">Mobile Number :</div></td><td><input type="number" name="mobile_no" placeholder="enter mobile number here" value="" required/>
                 </td>
             </tr>
 			<tr></tr>
@@ -30,7 +31,7 @@
             <tr>
 				<td></td>
                 <td>
-                    <input type="submit" name="submit" value="Sign-in" style="font-size:14px; " />
+                    <input class="button" type="submit" name="submit" value="Sign-in" style="font-size:14px; " />
                 </td>
             </tr>
 		<tr>
