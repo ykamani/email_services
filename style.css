@@ -35,13 +35,13 @@ body
 			
 		}
 		.header:hover {
-			background-color:white;
-			color:slateblue;
+			background-color:black;
+			color:white;
 		}
 		.button:hover {
 			background-color:black;
 			color:white;
-			border-radius: 7px;
+			border-radius: 4px;
 		}
 		div.txt {
 			color:aliceblue
