@@ -2,6 +2,13 @@
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<script>
+			li{
+				width: 200px;
+				height : 30px;
+				padding-right: 50px;
+			}
+		</script>
 	</head>
 	<body>
 		<div class="header" style="text-align: center;"><b> Primary Emails</b></div>
@@ -13,20 +20,37 @@
 				<td><button class="header" onclick="window.location.href='compose.html'"><b>Compose Email<b></button></td>
             </tr>
 			<tr colspan="7"><td colspan="3"></td></tr>
-            <tr>
-                <td colspan="3">
-                    <button class="button" onclick="window.location.href='content.html'">Subject of Email 1</button>
-                </td>
-            </tr>
+			<tr><td>
+			<div>
+			<input type="text" id="filter" placeholder="Search emails...">
+			</div><td>
+			</tr>
+			<ul id="items">
 			<tr>
-                <td colspan="3">
-                    <button class="button" onclick="window.location.href='content.html'">Subject of Email 2</button>
-                </td>
-            </tr><tr>
-                <td colspan="3">
-                    <button class="button" onclick="window.location.href='content.html'">Subject of Email 3</button>
-                </td>
-            </tr>
+			<td>
+				<li>
+				"Rearding AT submission"
+				<button class="btnDelete">Archive</button>
+				</li>
+			</td>
+			</tr>
+			<tr>
+			<td>
+				<li>
+				"TCS codevita season-9"
+				<button class="btnDelete">Archive</button>
+				</li>
+			</td>
+			</tr>
+			<tr>
+			<td>
+				<li>
+				"Codeforces Round 663"
+				<button class="btnDelete">Archive</button>
+				</li>
+				</td>
+			</tr>
+			</ul>
 			<tr>
                 <td colspan="3">
                     <button class="button" onclick="window.location.href='index.html'"><b>Back<b></button>
@@ -34,6 +58,7 @@
             </tr>
 			
         </table>
+		<script src="home_js.js"></script>
 	</body>
 </html>
 

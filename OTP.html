@@ -19,7 +19,7 @@
             </tr>
 			<tr>
                 <td>
-                    <input class="button" type="submit" name="submit" value="Send OTP" style="font-size:14px; " />
+                    <input class="button" onclick="reSendFunction()" type="submit" name="submit" value="Send OTP" style="font-size:14px; " />
                 </td>
             </tr>
         </table>
@@ -33,7 +33,7 @@
             </tr>
 			<tr>
                 <td>
-                    <input class="button" type="submit" name="submit" value="Verify" style="font-size:14px; " />
+                    <input class="button" onclick="wrongFunction()" type="submit" name="submit" value="Verify" style="font-size:14px; " />
                 </td>
             </tr>
 		<tr>
@@ -43,6 +43,14 @@
 			</tr>
         </table>
     </form> 
+	<script>
+		function reSendFunction() {
+			alert("In case of not recieving OTP , try again with RESEND option.");
+		}
+		function wrongFunction() {
+			alert("Dahhhh, wrong OTP entered.");
+		}
+	</script>
 	</body>
 </html>
 
