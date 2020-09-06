@@ -9,56 +9,94 @@
 				padding-right: 50px;
 			}
 		</script>
+		<style>
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+</style>
+		
 	</head>
 	<body>
 		<div class="header" style="text-align: center;"><b> Primary Emails</b></div>
 		<br>
 		<br>
-        <table align="center" >
-            <tr>
-                <td colspan="2"><button class="header" onclick="window.location.href='account.html'"><b>Manage Account<b></button></td>
-				<td><button class="header" onclick="window.location.href='compose.html'"><b>Compose Email<b></button></td>
-            </tr>
-			<tr colspan="7"><td colspan="3"></td></tr>
-			<tr><td>
+        
+            
+                <button class="header" onclick="window.location.href='account.html'"><b>Manage Account<b></button>
+				<button class="header" onclick="window.location.href='compose.html'"><b>Compose Email<b></button>            
+			<br>
 			<div>
-			<input type="text" id="filter" placeholder="Search emails...">
-			</div><td>
-			</tr>
+			<input type="text" class="pills" id="filter" placeholder="Search emails...">
+			</div>
+			<br>
 			<ul id="items">
-			<tr>
-			<td>
-				<li>
-				"Rearding AT submission"
-				<button class="btnDelete">Archive</button>
-				</li>
-			</td>
-			</tr>
-			<tr>
-			<td>
-				<li>
-				"TCS codevita season-9"
-				<button class="btnDelete">Archive</button>
-				</li>
-			</td>
-			</tr>
-			<tr>
-			<td>
-				<li>
-				"Codeforces Round 663"
-				<button class="btnDelete">Archive</button>
-				</li>
-				</td>
-			</tr>
-			</ul>
-			<tr>
-                <td colspan="3">
-                    <button class="button" onclick="window.location.href='index.html'"><b>Back<b></button>
-                </td>
-            </tr>
 			
-        </table>
+				<button class="accordion"  >Email 1</button>
+				
+				<div class="panel">
+					<p>Content of email 1</p>
+				</div><br>
+
+				<button class="accordion">Email 2</button>
+				<div class="panel">
+					<p>Content of email 2</p>
+				</div>
+				<br>
+				<button class="accordion">Email 3</button>
+				<div class="panel">
+					<p>Content of Email 3</p>
+				</div>
+	
+
+			<br>
+			</ul>
+			
+                
+                    <button class="button" onclick="window.location.href='index.html'"><b>Back<b></button>
+                
+            <br>
+			
+        
+		<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
 		<script src="home_js.js"></script>
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 	</body>
 </html>
 
