@@ -2,16 +2,23 @@
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<script>
+		function myFunction() {
+			alert("What's New!\n1. Feature of adding and deleting account in manage account.\n2. Feature to search email(Under Construction).\n3. Appropriate Pop-up boxes like for OTP resend , incase of wrong OTP entered and password not matching while signin,elc.\n4. Added collapse in home.html page.");
+		}
+	</script>
 	</head>
 	<body>
+		
 		<div class="header" style="text-align: center;"><b> Member Login </b></div>
 		<br>
 		<br>
 		<form method="get" action="./home.html" >
         <table align="center" >
             <tr>
-                <td><div class="txt">Email :</div></td><td><input type="email" name="email" placeholder="username@email.com" value="" required/>
-                </td>
+                <td><div class="txt">Email :</div></td><td><input  type="email" name="email" placeholder="username@email.com" value="" required/>
+                
+				</td>
             </tr>
             <tr>
                 <td><div class="txt">Password  :</div></td><td><input type="password" name="password" placeholder="enter password here" value="" required />
@@ -38,11 +45,11 @@
 			</tr>
         </table>
     </form>
-	<script>
-		function myFunction() {
-			alert("What's New!\n1. Feature of adding and deleting account in manage account.\n2. Feature to search email(Under Construction).\n3. Appropriate Pop-up boxes like for OTP resend , incase of wrong OTP entered and password not matching while signin,elc.");
-		}
-	</script>
+	
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
 	</body>
 </html>
 
