@@ -1,60 +1,80 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="style.css">
+		
 	</head>
 	<body>
-		<div class="header" style="text-align: center;"><b> Schedule Email </b></div>
-		<br>
-		<br>
-		<form method="get" action="home.html" >
-        <table align="center" >
-		<tr>
-				<td>
-					<a href="index.html">Log out</a>
-				</td>
-			</tr>
-            <tr>
-		    <tr>
-				<td>
-					<a href="home.html">Home</a>
-				</td>
-			</tr>
-		<td><div class="txt">Pick Time :</div></td><td colspan="2"><input type="time" name="time" placeholder="pick time" required/>
-                </td>
-            </tr>
-			<tr>
-                <td><div class="txt">From :</div></td><td colspan="2"><input type="email" name="from" placeholder="username@email.com" value="" required/>
-                </td>
-            </tr>
-			<tr>
-                <td><div class="txt">To :</div></td><td colspan="2"><input type="email" name="username" placeholder="username@email.com" value="" required/>
-                </td>
-            </tr>
-			<tr>
-                <td><div class="txt">Subject :</div></td><td colspan="2"><input type="text" name="username" placeholder="enter subject here" value="" />
-                </td>
-            </tr>
-			<tr>
-                <td><div class="txt">Compose text :</div></td><td colspan="2"><input type="text" name="username" placeholder="compose email here" value="" required/>
-                </td>
-            </tr>
-            <tr>
-                <td>
-					<button class="header" onclick="window.location.href='document.html'"><b>Attach Document<b></button>
-                </td>
-            </tr>
-			<tr>
-				<td colspan="2"></td>
-				<td><input class="button" type="submit" name="submit" value="Send" style="font-size:14px; " /></td>
-			</tr>
-			<tr>
-				<td>
-					<a href="compose.html">Back</a>
-				</td>
-			</tr>
-        </table>
-    </form> 
+		<div class="card " style="width:85rem;">
+			<div class="card-header">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<a class=" btn btn-outline-info" href="./index.html" role="button" style="width:30rem;"><abbr title="Click on this will redirect to Login page." class="initialism"><strong>Log out</strong></abbr></a>
+						</div>
+						<div class="col">
+							<a class=" btn btn-outline-info" href="./home.html" role="button" style="width:30rem;"><strong>Home</strong></a>
+						</div>
+					</div>	
+				</div>
+			</div>
+			<div class="card-body">
+				<form method="get" action="./home.html">
+					<div class="form-group row" >
+						<label class="col-sm-2 col-form-label"><strong>Pick Time :</strong></label>
+						<div class="col-sm-10">
+							<input type="time" class="form-control" id="time" placeholder="Pick time..." required >
+						</div>
+					</div>
+					<div class="form-group row" >
+						<label class="col-sm-2 col-form-label"><strong>From :</strong></label>
+						<div class="col-sm-10">
+							<input type="email" class="form-control" id="from" placeholder="username@email.com" required >
+						</div>
+					</div>
+					<div class="form-group row" >
+						<label class="col-sm-2 col-form-label"><strong>To :</strong></label>
+						<div class="col-sm-10">
+							<input type="email" class="form-control" id="username" placeholder="username@email.com" required >
+						</div>
+					</div>
+					<div class="form-group row" >
+						<label class="col-sm-2 col-form-label"><strong>Subject :</strong></label>
+						<div class="col-sm-10">
+							<input type="text" class="form-control" id="subject" placeholder="Enter subject here." required >
+						</div>
+					</div>
+					<div class="form-group row" >
+						<label class="col-sm-2 col-form-label"><strong>Subject :</strong></label>
+						<div class="col-sm-10">
+							<input type="text" class="form-control" id="subject" placeholder="Compose text here." required >
+						</div>
+					</div>
+					<div class="form-group row" >
+						<label class="col-sm-2 col-form-label"><strong>Attach Document :</strong></label>
+						<div class="col-sm-10">
+							<input id="input-b3" id="file" type="file" class="file" multiple 
+    data-show-upload="false" data-show-caption="true" data-msg-placeholder="Select {files} for upload...">
+						</div>
+					</div>
+					<div class="form-group row">
+						<div class="col">
+							</div>
+						<div class="col">
+							<button type="submit" class="btn btn-primary" style="width:30rem;">Sign-in</button>
+						</div>
+					</div>
+				</form>
+				<a class=" btn btn-outline-info" href="./compose.html" role="button" style="width:30rem;">Back</a>
+			</div>
+			<div class="card-footer text-muted">Information about this Page.</div>
+		</div>
+		
+			<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+			<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+
 	</body>
 </html>
 
